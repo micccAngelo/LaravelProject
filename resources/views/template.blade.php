@@ -9,6 +9,11 @@
     <title>@yield('title')</title>
 </head>
 <body>
+<style>
+body {
+  background-image: url('https://i0.wp.com/luamaralstudio.com/wp-content/uploads/2020/09/Aesthetic-fall-autumn-computer-wallpaper-backgrounds-desktop-31.png?resize=980%2C551');
+}
+</style>
     @yield('content')
 </body>
 </html>

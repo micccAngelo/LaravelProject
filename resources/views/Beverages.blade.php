@@ -5,6 +5,7 @@
 @section('content')
 
     @include('navbar')
+    <br>
     <div class= "d-flex justify-content-around">
     @for($i = 0; $i < count($Boba); $i++)
     <div class= "d-flex justify-content-around">
@@ -15,8 +16,10 @@
                 <p class="card-text">{{$Desc[$i]}}</p>
                 @if($Type[$i]=="Tea")
                 <span class="badge badge-success">{{$Type[$i]}}</span>
-                @else
+                @elseif($Type[$i]=="Boba")
                 <span class="badge badge-primary">{{$Type[$i]}}</span>
+                @elseif($Type[$i]=="Coffee")
+                <span class="badge badge-dark">{{$Type[$i]}}</span>
                 @endif
             </div>
         </div>
